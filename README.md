@@ -41,7 +41,7 @@ $$
 **Q2 (5 points).** For the following matrix:
 
 $$
-M = \begin{bmatrix}2 & -1 \\ 
+M = \begin{bmatrix}2 & -1 \\
 -1 & 2\end{bmatrix}
 $$
 
@@ -56,7 +56,7 @@ $$
 **Q4 (5 points).** Show step-by-step that the inverse of the matrix
 
 $$
-C = \begin{bmatrix}4 & 7 \\ 
+C = \begin{bmatrix}4 & 7 \\
 2 & 6\end{bmatrix}
 $$
 
@@ -140,6 +140,6 @@ Submit to Canvas by the deadline:
 
 ## Collaboration and AI Policy
 
-Per the course AI policy, AI usage is allowed on this assignment as long as you submit the conversation log to Canvas. 
+Per the course AI policy, AI usage is allowed on this assignment as long as you submit the conversation log to Canvas.
 
 Good luck!

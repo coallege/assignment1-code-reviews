@@ -1,24 +1,23 @@
 """CSE 242 Assignment 1 — submit as Assignment1.py.
-
-Fill # YOUR ANSWER HERE blocks with commented reasoning; fill function bodies
-at # YOUR CODE HERE. Keep signatures. See README.md and INTERFACE.md.
-Functions must not mutate inputs, prompt for input, or perform network I/O.
-Only code inside the main guard should save/show figures.
 """
 import numpy as np
 
 
-# PART 1 (20 points), Q1: Show computations for the given A and B.
-# YOUR ANSWER HERE
+# PART 1 (20 points)
+# P1 Q1: Show computations for the given A and B.
+# Computations found in Part12.typ
 def matrix_operations(A=None, B=None):
+    if A is None:
+        A = np.matrix([[3,4], [2,1]])
+    if B is None:
+        B = np.matrix([[1,2], [0,-1]])
     """Return AB, BA, (A+B).T, A@B.T, trace(A), trace(AB).
 
-    Defaults: A=[[3,4],[2,1]], B=[[1,2],[0,-1]]. Other inputs are square
-    real matrices of matching size. Return a tuple in the specified order.
+    Defaults: A = [[3,4], [2,1]], _B. Other inputs are square real matrices of matching size.
+    Return a tuple in the specified order.
     """
-    # YOUR CODE HERE
-    raise NotImplementedError()
 
+    return (A * B, B * A, A + B, A * B.T, A.trace(), (A * B).trace())
 
 # P1 Q2: Derive the given M eigenpairs and verify Mv=lambda*v.
 # YOUR ANSWER HERE
@@ -99,7 +98,7 @@ def gaussian_map(x=5., observation_variance=4., prior_mean=0., prior_variance=1.
 # YOUR ANSWER HERE
 
 # PART 3 (30 points), Q1: Define covariance and derive Var(u.T@X)=u.T@Sigma@u.
-# YOUR ANSWER HERE
+# 
 
 # P3 Q2: Describe the Gaussian generator and observed correlation.
 # YOUR ANSWER HERE
